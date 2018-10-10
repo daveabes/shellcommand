@@ -18,8 +18,10 @@ you will get the output of the command.
 # Example:
 
 ```
+// Use await with try catch or promise().then().catch();
+
 import { ShellCommand } from 'shellcommand';
 const pwd = new ShellCommand();
-result = pwd.executeAsync(`pwd`);
+result = await pwd.executeAsync(`pwd`);
 console.log(result); // Should return the output of pwd
 ```
