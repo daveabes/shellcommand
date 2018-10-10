@@ -1,6 +1,6 @@
 {
   "name": "shellcommand",
-  "version": "0.1.01",
+  "version": "0.1.2",
   "description": "A nodejs bash shell command wrapper.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
