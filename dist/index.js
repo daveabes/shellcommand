@@ -1,5 +1,7 @@
-let testing = 'Zoot';
-console.log(`Hello ${testing}`);
-testing = 'New Value';
-console.log(`Updated: ${testing}`);
+"use strict";
+const GreeterService_1 = require("./services/GreeterService");
+GreeterService_1.GreeterService.greet();
+module.exports = {
+    GreeterService: GreeterService_1.GreeterService,
+};
 //# sourceMappingURL=index.js.map
