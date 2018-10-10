@@ -9,7 +9,7 @@
     "README.md",
     "LICENSE"
   ],
-  "homepage": "https://github.com/serverless/serverless#readme",
+  "homepage": "https://github.com/daveabes/shellcommand/#readme",
   "scripts": {
     "start": "npm run serve",
     "serve": "node dist/index.js",
