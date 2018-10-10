@@ -1,5 +1,5 @@
-import { GreeterService } from './services/GreeterService';
+import ShellCommand from './models/ShellCommand';
 
 export = {
-  GreeterService,
+  ShellCommand,
 };

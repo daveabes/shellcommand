@@ -1,9 +1,14 @@
 {
   "name": "shellcommand",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A nodejs bash shell command wrapper.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "/dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "start": "npm run serve",
     "serve": "node dist/index.js",
@@ -19,18 +24,32 @@
     "test:unit:debug": "mocha --inspect --debug-brk --not-timeouts --compilers ts:ts-node/register ./tests/unit/**/*.spec.ts"
   },
   "author": "Daver",
-  "license": "GPL",
+  "license": "UNLICENSED",
   "devDependencies": {
     "@types/chai": "^4.1.4",
     "@types/mocha": "^5.2.5",
+    "@types/node": "^10.11.6",
     "chai": "^4.1.2",
     "chai-http": "^4.0.0",
-    "mocha": "^5.2.0",
     "concurrently": "^3.6.1",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.3",
-    "tslint": "^5.11.0",
     "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
     "typescript": "^3.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node": "^10.11.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveabes/shellcommand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daveabes/shellcommand/issues"
+  },
+  "homepage": "https://github.com/daveabes/shellcommand#readme"
 }

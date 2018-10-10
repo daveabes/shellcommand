@@ -1,7 +1,6 @@
 "use strict";
-const GreeterService_1 = require("./services/GreeterService");
-GreeterService_1.GreeterService.greet();
+const ShellCommand_1 = require("./models/ShellCommand");
 module.exports = {
-    GreeterService: GreeterService_1.GreeterService,
+    ShellCommand: ShellCommand_1.default,
 };
 //# sourceMappingURL=index.js.map
