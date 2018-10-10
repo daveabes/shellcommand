@@ -1,1 +1,0 @@
-import { ShellCommand } from '../index';
