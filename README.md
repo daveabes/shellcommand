@@ -1,6 +1,7 @@
 # Build Status:
 
-##Master Branch:
+## Master Branch:
+
 [![Build Status](https://travis-ci.org/daveabes/shellcommand.svg?branch=master)](https://travis-ci.org/daveabes/shellcommand)
 
 # Overview:
