@@ -5,7 +5,7 @@
 
 # Overview:
 
-ShellCommand is a child_process wrapper that enables you to execute async shell commands easily.
+ShellCommand is a child_process wrapper for Linux that enables you to execute async shell commands easily from within NodeJS.
 
 # How To:
 
