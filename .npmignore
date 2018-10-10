@@ -1,4 +1,4 @@
-src
-tsconfig.json
-tslint.json
-.prettierrc
+./src
+./tsconfig.json
+./tslint.json
+./prettierrc
