@@ -1,0 +1,37 @@
+{
+  "name": "node.ts.api.base",
+  "version": "0.0.1",
+  "description": "A simple typescript node application.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "node dist/index.js",
+    "deploy": "npm run build && npm run start",
+    "build": "npm run ts-lint && npm run build-ts",
+    "ts-lint": "tslint -c tslint.json -p tsconfig.json",
+    "build-ts": "tsc",
+    "debug": "npm run build && npm run watch-debug",
+    "watch-ts": "tsc -w",
+    "serve-debug": "nodemon --inspect dist/index.js",
+    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve-debug\"",
+    "test:unit": "mocha -r ts-node/register ./test/unit/**/*.ts",
+    "test:unit:debug": "mocha --inspect --debug-brk --not-timeouts --compilers ts:ts-node/register ./tests/unit/**/*.spec.ts"
+  },
+  "author": "Daver",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.2.0",
+    "concurrently": "^3.6.1",
+    "nodemon": "^1.18.3",
+    "tslint": "^5.11.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+
+  }
+}
