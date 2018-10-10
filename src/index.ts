@@ -1,5 +1,5 @@
 import ShellCommand from './models/ShellCommand';
 
-export = {
+exports = {
   ShellCommand,
 };
