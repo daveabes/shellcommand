@@ -40,6 +40,6 @@ export default class ShellCommand implements IExecute {
     res(`Process closed without error with code of: ${code}`);
   }
   protected handleStdOut(res: any, data: any): void {
-    res(data);
+    res(`${data}`);
   }
 }
